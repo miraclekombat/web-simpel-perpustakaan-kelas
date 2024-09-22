@@ -1,0 +1,264 @@
+/* page title styles */
+#page__title {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+.page__title__text {
+	font-size: 2.2rem;
+	color: var(--black-1);
+}
+@media only screen and (min-width: 768px) {
+	#page__title {
+		padding-top: 5rem;
+		padding-bottom: 3rem;
+	}
+	.page__title__text {
+		font-size: 3.6rem;
+	}
+}
+
+*,
+*::before,
+*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+
+/* EventsMedia Styles */
+.eventsMedia__wrapper {
+	display: flex;
+	gap: 1rem;
+}
+.eventsMedia__1 {
+	position: relative;
+}
+.eventsMedia__1__playButton {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 50px;
+}
+@media only screen and (min-width: 768px) {
+	.eventsMedia__wrapper {
+		gap: 2rem;
+	}
+	.eventsMedia__1__playButton {
+		max-width: 100px;
+	}
+}
+/* Basic button styles */
+.source-btn {
+	padding: 10px 20px;
+	border: 1px solid #868686;
+	background-color: #99c8ca;
+	color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 20px;
+  }
+  
+  /* Styles to resemble code snippet appearance */
+  .source-btn::after {
+	
+	font-family: FontAwesome; /* You may need to include FontAwesome library */
+	margin-left: 5px;
+  }
+  
+  /* Hover effect */
+  .source-btn:hover {
+	background-color: #e0e0e0;
+  }
+  .hero__judul {
+	font-family: Poppins;
+	font-weight: 600;
+	line-height: 1.4em;
+	text-align: center;
+	font-size: 2.8rem;
+	margin-bottom: 1.5rem;
+	color: var(--black-1);
+}
+/* End EventsMedia Styles */
+
+/* EventsInfo Styles*/
+#eventsInfo {
+	padding-top: 0;
+}
+.eventsInfo__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.eventsInfo__item {
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+	background: var(--lightGreen-1);
+	margin-bottom: 1.5rem;
+	border-radius: 12px;
+}
+.eventsInfo__item__img {
+	border-radius: 12px;
+	height: fit-content;
+	overflow: hidden;
+	flex: 3;
+}
+.eventsInfo__item__info {
+	flex: 4;
+}
+.eventsInfo__item__img img {
+	object-fit: cover;
+}
+.eventsInfo__item__title {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	color: var(--black-1);
+}
+.eventsInfo__item__text {
+	font-size: 1.4rem;
+	color: var(--black-2);
+}
+.eventsInfo__right {
+	margin-top: 2rem;
+}
+.eventsInfo__title {
+	font-size: 1.8rem;
+	color: var(--black-1);
+	margin-bottom: 1rem;
+}
+.eventsInfo__text {
+	color: var(--black-2);
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+@media only screen and (min-width: 760px) {
+	.eventsInfo__wrapper {
+		flex-direction: row;
+		gap: 2rem;
+	}
+	.eventsInfo__left,
+	.eventsInfo__right {
+		flex: 1;
+	}
+	.eventsInfo__item {
+		padding: 2rem;
+		gap: 2rem;
+		max-width: 500px;
+		margin-bottom: 2rem;
+	}
+	.eventsInfo__item__title {
+		font-size: 1.8rem;
+	}
+	.eventsInfo__item__text {
+		font-size: 1.6rem;
+	}
+	.eventsInfo__title {
+		font-size: 3.6rem;
+	}
+	.eventsInfo__text {
+		max-width: 500px;
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+	}
+}
+/* End EventsInfo Styles*/
+
+
+/* Our Specials Menu Styles */
+#ourSpecials {
+	padding: 0;
+}
+.ourSpecials__title {
+	font-size: 1.8rem;
+	color: var(--black-1);
+	margin-bottom: 2rem;
+}
+.ourSpecials__wrapper {
+	display: flex;
+	gap: 1.5rem;
+	flex-direction: column;
+	max-width: 400px;
+}
+.ourSpecials__item {
+	flex: 1;
+	display: flex;
+	gap: 2rem;
+	background-color: var(--lightGreen-1);
+	padding: 1.5rem;
+	border-radius: 12px;
+}
+.ourSpecials__item__img,
+.ourSpecials__item__info {
+	flex: 1;
+}
+.ourSpecials__item__img {
+	border-radius: 12px;
+	overflow: hidden;
+}
+.ourSpecials__item__img img {
+	object-fit: cover;
+	
+}
+.ourSpecials__item__title {
+	font-size: 2.4rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	color: var(--black-1);
+	line-height: 1.2em;
+}
+.ourSpecials__item__price {
+	font-size: 1.8rem;
+	color: var(--green-1);
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.ourSpecials__item__stars {
+	width: max-content;
+}
+@media only screen and (min-width: 768px) {
+	.ourSpecials__title {
+		font-size: 2.4rem;
+	}
+	.ourSpecials__wrapper {
+		flex-direction: row;
+		gap: 2rem;
+		max-width: none;
+	}
+	.ourSpecials__item {
+		padding: 3rem;
+		gap: 2rem;
+	}
+	.ourSpecials__item__title {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+	.ourSpecials__item__price {
+		font-size: 2.4rem;
+		margin-bottom: 1.5rem;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.ourSpecials__item__img {
+		flex: 4;
+	}
+	.ourSpecials__item__info {
+		flex: 3;
+	}
+}
+
+/* Dish Grid Styles */
+#dishGrid {
+	padding-bottom: 0;
+}
+#dishGrid:last-of-type {
+	padding-bottom: 10rem;
+}
